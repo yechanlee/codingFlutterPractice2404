@@ -10,9 +10,34 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Center(
-         child: Container( width: 50, height: 50, color: Colors.blue),
-        // child: Image.asset('assets/salonde.png')
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('앱2임'),
+          backgroundColor: Colors.blue,
+        ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: const [
+            Icon(Icons.star),
+            Icon(Icons.star),
+            Icon(Icons.star),
+          ],
+        ),
+         bottomNavigationBar: BottomAppBar(
+           child: SizedBox(
+             height: 20,
+             child: Row(
+               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+               children: const [
+                 Icon(Icons.phone),
+                 Icon(Icons.message),
+                 Icon(Icons.contact_page),
+               ],
+             ),
+
+           )
+         ),
       )
     );
   }
