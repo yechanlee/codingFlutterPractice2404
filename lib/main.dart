@@ -15,14 +15,20 @@ class MyApp extends StatelessWidget {
           title: Text('앱2임'),
           backgroundColor: Colors.blue,
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: const [
-            Icon(Icons.star),
-            Icon(Icons.star),
-            Icon(Icons.star),
-          ],
+        body: Align(
+          alignment: Alignment.bottomCenter,
+          child: Container(
+            width: 250, height: 250,
+            padding: EdgeInsets.fromLTRB(20,20,0,0),
+            // 마진: 바깥 여백
+            // 패딩: 안쪽 여백
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.black),
+            ),
+            child: Text('dddd)'),
+
+
+          ),
         ),
          bottomNavigationBar: BottomAppBar(
            child: SizedBox(
@@ -32,7 +38,6 @@ class MyApp extends StatelessWidget {
                children: const [
                  Icon(Icons.phone),
                  Icon(Icons.message),
-                 Icon(Icons.contact_page),
                ],
              ),
 
