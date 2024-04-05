@@ -38,6 +38,8 @@ class MyApp extends StatelessWidget {
                children: const [
                  Icon(Icons.phone),
                  Icon(Icons.message),
+                 Icon(Icons.access_alarm),
+                 Icon(Icons.add_circle)
                ],
              ),
 
