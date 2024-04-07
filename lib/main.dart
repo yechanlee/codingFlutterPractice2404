@@ -39,7 +39,9 @@ class MyApp extends StatelessWidget {
                  Icon(Icons.phone),
                  Icon(Icons.message),
                  Icon(Icons.access_alarm),
-                 Icon(Icons.add_circle)
+                 Icon(Icons.add_circle),
+                 Icon(Icons.accessibility_new
+                 )
                ],
              ),
 
